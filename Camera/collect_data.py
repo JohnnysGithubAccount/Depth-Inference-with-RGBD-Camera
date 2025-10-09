@@ -21,13 +21,13 @@ colorizer = rs.colorizer()
 colorizer.set_option(rs.option.color_scheme, 0)  # 0 = Jet
 
 # === Create folders ===
-scene = "scene1"
+scene = "scene_1"
 rgb_folder = f"../self_collected_dataset/rgb/{scene}"
 depth_folder = f"../self_collected_dataset/depth/{scene}"
 os.makedirs(rgb_folder, exist_ok=True)
 os.makedirs(depth_folder, exist_ok=True)
 
-# === Font for labels ===
+# === Font for letters ===
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 def put_label(image, text):
